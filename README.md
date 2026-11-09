@@ -29,7 +29,6 @@ for i in range(1001):
     #Formula for residual: y - (m * x + c) 
     residuals = y - (m * x + c)
 
-    #Formula for sum of squared residual: Sigma(y - (m * x + c))²
     #In this case we are using mean squared error instead, as np.sum does not take into account the amount of data
     #(len(x,y)), which would mean the learning rate would need adjusted. 
     mse = np.mean(residuals**2)

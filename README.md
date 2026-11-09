@@ -61,3 +61,5 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
     if np.linalg.norm([gradient_m, gradient_c]) < 1e-5:
         break
 ```
+
+## Plotting the results

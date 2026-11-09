@@ -69,12 +69,23 @@ for (it, m_i, c_i, _), col in zip(history, colors):
     #If it is 0 or the last iter value in history, add it to the legend, otherwise discard.
     ax1.plot(x_line, m_i * x_line + c_i, color=col, alpha=0.8, label=f"iter {it}" if it in (0, history[-1][0]) else None)
 
-ax1.plot(x_line, best_m * x_line + best_c, "r--", label="polyfit")
+#Plot the optimal polyfit line. Use zorder to ensure visibility.
+ax1.plot(x_line, best_m * x_line + best_c, "r--", zorder=5, label="polyfit")
+#Configure 1st graph
 ax1.set_xlabel("weight")
 ax1.set_ylabel("height")
 ax1.set_title("Fitted line every 10 iterations")
 ax1.legend()
 
+#Plot iterations against MSE using the same color format as graph 1. Semilogy uses log scale for the plot so improvements are visible. 
+for h, col in zip(history,colors):
+    ax2.semilogy(h[0], h[3], marker="o", color=col)
+#Configure 2nd graph.
+ax2.set_xlabel("iteration")
+ax2.set_ylabel("MSE")
+ax2.set_title("Error rate as m and c converge")
+
+#Show results.
 plt.tight_layout()
 plt.show()
 

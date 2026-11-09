@@ -35,7 +35,7 @@ for i in range(1001):
     mse = np.mean(residuals**2)
 ```
 
-Given our mse formula $\sum$
+Given our mse formula $\sum (yᵢ - (mxᵢ + c))² $
     #We can derive this equation with respect to the intercept (c) -> Sigma(y - (m * x + c))² = Sigma 2 * (y - (m * x + c) * -1 
     # -> Sigma -2 * (yi - (m * xi + c))                                                                   (0)- (0) (0) (1) = -1
     gradient_c = -2 * np.mean(residuals)

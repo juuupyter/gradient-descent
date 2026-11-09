@@ -7,3 +7,5 @@ weight = seed.random(10)
 height = weight + seed.normal(0.5, 0.1, 10)
 ```
 10 samples are created for weight with rng.random(). Then, normally distributed values are added to the weight values to create height values.  
+
+# Defining the variables for gradient descent:

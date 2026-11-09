@@ -18,3 +18,8 @@ m = 0.0
 c = 0.0
 lr = 0.01
 ```
+
+**Define history array so results can be shown**
+```
+history = []
+```

@@ -56,7 +56,7 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
     #Record variables every 10 iterations
     if i % 10 == 0:
         history.append((i,m,c,mse))
-2-norm $\sqrt \sum$
+2-norm $\sqrt \sum \abs xᵢ² $
 ```
     if np.linalg.norm([gradient_m, gradient_c]) < 1e-5:
         break

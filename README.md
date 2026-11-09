@@ -57,7 +57,7 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
     if i % 10 == 0:
         history.append((i,m,c,mse))
 ```
-    #2-norm of the two gradients (sqrt sum of squares). Measure the error surface and only stop when the surface is flat for BOTH variables. 
+#2-norm of the two gradients (sqrt sum of squares). Measure the error surface and only stop when the surface is flat for BOTH variables. 
     if np.linalg.norm([gradient_m, gradient_c]) < 1e-5:
         break
 ```

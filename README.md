@@ -63,3 +63,4 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
 ```
 
 ## Plotting the results
+<img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/a124ddd4-3796-4216-9aa9-af58b4de4ac5" />

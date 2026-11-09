@@ -53,7 +53,7 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
     m = m - lr * gradient_m
     c = c - lr * gradient_c
 
-    #Record variables every 100 iterations
+    #Record variables every 10 iterations
     if i % 10 == 0:
         history.append((i,m,c,mse))
 ```

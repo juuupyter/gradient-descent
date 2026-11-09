@@ -37,13 +37,13 @@ for i in range(1001):
 
 Given our MSE formula: $\sum (yᵢ - (mxᵢ + c))² $, we can derive with respect to the intercept (c):
 $\sum 2 * (yᵢ - (mxᵢ + c)) * u $. <br />
-Treating everything but c in the equation u as a constant, we get $c = -1$. <br />
+Treating everything but $c$ in the equation $u$ as a constant, we get $c = -1$. <br />
 This gives us our formula for the optimum gradient of c: $\sum -2 * (yᵢ - (mxᵢ + c))$
 ```
     gradient_c = -2 * np.mean(residuals)
 ```
 We can do the same with respect to the slope (m) -> $\sum 2 * (y - (mx + c) * u $. <br /> 
-Then, treating everything but m in u as a constant, we get that $m = -x$. (Since $m$ was dependent on $x$ for its value.)
+Then, treating everything but $m$ in $u$ as a constant, we get that $m = -x$. (Since $m$ was dependent on $x$ for its value.)
 
     #Do the same with respect to the slope (m) -> Sigma(y - (m * x + c))² = Sigma 2 * (y - (m  * x + c)) * -x
     # -> Sigma -2xi * (yi - (m * xi +c))                                              (0)- (-1)* x +(0)  = -x

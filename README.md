@@ -35,7 +35,7 @@ for i in range(1001):
     mse = np.mean(residuals**2)
 ```
 
-Given our MSE formula: $\sum (yᵢ - (mxᵢ + c))² $, we can derive the equation with respect to the intercept (c):
+Given our MSE formula: $\sum (yᵢ - (mxᵢ + c))² $, we can derive with respect to the intercept (c):
 $\sum (yᵢ - (mxᵢ + c))² = \sum 2 * (yᵢ - (mxᵢ + c)) * u $. Treating everything but c in the equation u as a constant, we get c = -1. 
 This gives us our formula for the optimum gradient of c: $\sum -2 * (yᵢ - (mxᵢ + c))$
 ```

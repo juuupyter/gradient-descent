@@ -64,4 +64,11 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
 
 ## Plotting the results
 Using matplotlib to display the values we recorded in history. Polyfit is the least squares solution for m and c. Naturally, gradient descent is more useful for applications where a local minimum does not exist or is too expensive to compute; See: AI training, neural networks, but this is just a demo. The second graph is the MSE decreasing as each step of descent is taken.
+
 <img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/a124ddd4-3796-4216-9aa9-af58b4de4ac5" />
+
+With a higher learning rate (0.01 -> 0.1), we meet the same results as polyfit.
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/248c5bf1-dcf1-482c-b664-4298412ab787" />
+<img width="316" height="78" alt="image" src="https://github.com/user-attachments/assets/293c1d1b-6fab-4538-9c1f-9349ac4612ee" />
+
+

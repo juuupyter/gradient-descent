@@ -48,6 +48,7 @@ This gives us our formula for the optimum gradient of m: $\sum -2xᵢ * (yᵢ - 
 ```
     gradient_m = -2 * np.mean(x * residuals)
 ```
+### Performing descent
     #Redfine m and c per step to perform descent. 
     m = m - lr * gradient_m
     c = c - lr * gradient_c

@@ -30,9 +30,10 @@ for i in range(1001):
     residuals = y - (m * x + c)
 
     #Formula for sum of squared residual: Sigma(y - (m * x + c))²
-    #In this case we are using mean squared error instead, as np.sum does not take into account the amount of data (len(x,y)), which would mean the learning rate would need adjusted. 
+    #In this case we are using mean squared error instead, as np.sum does not take into account the amount of data
+    #(len(x,y)), which would mean the learning rate would need adjusted. 
     mse = np.mean(residuals**2)
-
+```
     #We can derive this equation with respect to the intercept (c) -> Sigma(y - (m * x + c))² = Sigma 2 * (y - (m * x + c) * -1 
     # -> Sigma -2 * (yi - (m * xi + c))                                                                   (0)- (0) (0) (1) = -1
     gradient_c = -2 * np.mean(residuals)

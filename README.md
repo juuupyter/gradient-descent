@@ -42,7 +42,7 @@ This gives us our formula for the optimum gradient of c: $\sum -2 * (yᵢ - (mx�
 ```
     gradient_c = -2 * np.mean(residuals)
 ```
-We can do the same with respect to the slope (m) -> $\sum 2 * (y - (mx + c) * u $ <br />
+We can do the same with respect to the slope (m) -> $\sum 2 * (y - (mx + c) * u $ 
 Then, treating everything but m in u as a constant, we get that $m = -x$. (since m was dependent on x for its value)
 
     #Do the same with respect to the slope (m) -> Sigma(y - (m * x + c))² = Sigma 2 * (y - (m  * x + c)) * -x
